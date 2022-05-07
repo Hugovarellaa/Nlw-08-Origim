@@ -108,6 +108,11 @@ body.menu-active .close-menu {
   visibility: visible;
 }
 
+.menu {
+  transform: translateY(100%);
+
+}
+
 body.menu-active .menu {
   position: fixed;
   top: 0;
@@ -116,6 +121,10 @@ body.menu-active .menu {
   width: 100vw;
   height: 100vh;
   padding-top: 7.1rem;
+
+  transition: transform 300ms;
+  transform: translateY(0%);
+
 }
 
 body.menu-active nav#navigator {
