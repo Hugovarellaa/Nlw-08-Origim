@@ -1,0 +1,36 @@
+:root {
+  font-size: 62.5%; /* equivale a 10px */
+
+  --hue: 170;
+  --primary: hsl(var(--hue), 100%, 26%);
+  --headline: hsl(210, 11%, 15%);
+  --paragraph: hsl(210, 9%, 31%);
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+h4 {
+  font-size: 1.4rem;
+  color: var(--primary);
+}
+
+h1 {
+  font-size: 3.4rem;
+  color: var(--headline);
+  line-height: 130%;
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 150%;
+  font-weight: normal;
+  color: var(--paragraph);
+}
+
+button {
+  background-color: var(--primary);
+}
