@@ -32,8 +32,7 @@ body {
 
 nav {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+
   position: fixed;
 
   height: 7.1rem;
@@ -41,6 +40,24 @@ nav {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+}
+
+nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav.scroll {
+  background: var(--primary);
+  width: 100vw;
+}
+
+nav.scroll svg:first-child path {
+  fill: white;
+}
+nav.scroll svg:last-child path {
+  stroke: white;
 }
 
 /* /Nav */
