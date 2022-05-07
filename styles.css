@@ -16,7 +16,8 @@
   --brand-light: hsl(148, 23%, 89%);
 }
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
 }
@@ -27,15 +28,17 @@ body {
   text-align: center;
 }
 
+ul {
+  list-style: none;
+}
+
 .container {
   width: 37.5rem;
   margin: 0 auto;
   padding: 0 2.4rem;
 }
 
-
 /*------------- Nav -------------------*/
-
 
 nav {
   display: flex;
@@ -66,6 +69,86 @@ nav.scroll svg:last-child path {
 
 /*------------- /Nav -------------------*/
 
+/*-------------  Nav Menu --------------*/
+
+body.menu-active {
+  overflow: hidden;
+}
+
+.menu,
+.close-menu,
+body.menu-active .open-menu {
+  opacity: 0;
+  visibility: hidden;
+}
+
+body.menu-active .menu,
+body.menu-active .close-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+body.menu-active .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: var(--primary);
+  width: 100vw;
+  height: 100vh;
+}
+
+body.menu-active nav#navigator {
+  position: relative;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+  margin-top: 6rem;
+}
+
+.menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  line-height: 3.1rem;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.menu .button {
+  background: white;
+  border-radius: 4rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--primary);
+
+  display: inline-block;
+  padding: 1.6rem 32px;
+
+  margin-top: 4.8rem;
+  margin-bottom: 8rem;
+}
+
+body.menu-active .menu .social-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+}
+
+/*------------- /Nav Menu --------------*/
 
 /*------------- Header  -------------------*/
 
@@ -173,5 +256,3 @@ header .stat p {
 }
 
 /*------------- /Header -------------------*/
-
-
