@@ -26,10 +26,15 @@ body {
   font-family: "DM Sans", sans-serif;
   font-size: 1.6rem;
   text-align: center;
+  overflow: overlay;
 }
 
 ul {
   list-style: none;
+}
+
+button {
+  cursor: pointer;
 }
 
 .container {
@@ -60,11 +65,16 @@ nav.scroll {
   background: var(--primary);
   width: 100vw;
 }
-nav.scroll svg:first-child path {
+nav.scroll path {
   fill: white;
 }
-nav.scroll svg:last-child path {
+nav.scroll button path {
   stroke: white;
+}
+
+nav button {
+  background: none;
+  border: none;
 }
 
 /*------------- /Nav -------------------*/
@@ -73,6 +83,10 @@ nav.scroll svg:last-child path {
 
 body.menu-active {
   overflow: hidden;
+}
+
+body.menu-active > :not(nav) {
+  display: none;
 }
 
 .menu,
@@ -95,6 +109,7 @@ body.menu-active .menu {
   background: var(--primary);
   width: 100vw;
   height: 100vh;
+  padding-top: 7.1rem;
 }
 
 body.menu-active nav#navigator {
@@ -146,6 +161,25 @@ body.menu-active .menu .social-links {
   align-items: center;
   justify-content: center;
   gap: 3.2rem;
+  margin-bottom: 28.9rem;
+}
+
+body.menu-active .logo,
+body.menu-active button svg path,
+body.menu-active button {
+  position: relative;
+  z-index: 100;
+}
+body.menu-active .logo svg path {
+  fill: white;
+}
+body.menu-active button.close-menu svg path {
+  stroke: white;
+}
+
+body.menu-active button.close-menu {
+  border: 0;
+  background: transparent;
 }
 
 /*------------- /Nav Menu --------------*/
