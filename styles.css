@@ -48,9 +48,27 @@ p {
 
 button {
   background-color: var(--primary);
-  border-radius: 0.8rem;
+  border-radius: 4rem;
   border: none;
+
   display: flex;
+  align-items: center;
+  justify-content: center;
+
   margin: 1rem auto;
   margin-bottom: 6rem;
+
+  width: 26.3rem;
+  height: 6.2rem;
+
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+button img {
+  margin-right: 1rem;
+  width: 20px;
+  height: 20px;
 }
