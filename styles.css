@@ -17,6 +17,10 @@
   --brand-green-light: hsl(180, 14%, 97%, 1);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   width: 100%;
@@ -28,7 +32,7 @@ body {
   font-size: 1.6rem;
   text-align: center;
   overflow: overlay;
-  background: var(--brand-green-light)
+  background: var(--brand-green-light);
 }
 
 ul {
@@ -207,7 +211,7 @@ header::before {
 
 header.container {
   padding: 0 2rem;
-  margin-top: calc(11.2rem);
+  padding-top: calc(11.2rem);
 }
 
 header h4 {
