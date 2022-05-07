@@ -122,8 +122,8 @@ body.menu-active .menu {
   height: 100vh;
   padding-top: 7.1rem;
 
-  transition: transform 300ms;
-  transform: translateY(0%);
+  transition: transform  500ms;
+  transform: translateY(0);
 
 }
 
