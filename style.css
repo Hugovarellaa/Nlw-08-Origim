@@ -11,6 +11,7 @@
   --headline: hsl(210, 11%, 15%);
   --paragraph: hsl(210, 9%, 31%);
   --brand-beige: hsl(39, 100%, 97%);
+  --brand-light: hsl(148, 23%, 89%);
 }
 
 body {
@@ -27,12 +28,6 @@ button {
   font-weight: normal;
 }
 
-header {
-  width: 37.5rem;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-
 h1,
 h2,
 h3,
@@ -43,12 +38,44 @@ strong {
   font-weight: 700;
 }
 
-a {
+.container {
+  width: 37.5rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+header.container {
+  margin-top: calc(4.1rem + 7.2rem);
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: calc(105rem + 7.2rem);
+  background: var(--brand-light);
+  z-index: -1;
+}
+
+header h1 {
+  font-size: 3.4rem;
+  color: var(--secondary-color);
+  line-height: 130%;
+}
+
+header h4 {
+  font-size: 1.6rem;
+  color: var(--headline);
+}
+
+header a {
   text-decoration: none;
   color: inherit;
 }
 
-button {
+header button {
   cursor: pointer;
   background: var(--primary-color);
   border: none;
@@ -66,21 +93,10 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 1.6rem;
 }
 
-h1 {
-  font-size: 3.4rem;
-  color: var(--secondary-color);
-  line-height: 130%;
-}
-
-h4 {
-  font-size: 1.6rem;
-  color: var(--headline);
-}
-
-p {
+header p {
   font-size: 1.8rem;
   line-height: 150%;
   font-weight: 400;
@@ -88,9 +104,69 @@ p {
   margin-bottom: 3.2rem;
 }
 
+header > img {
+  width: 26.4rem;
+  object-position: 0 2rem;
+  display: block;
+  margin: 0 auto;
+}
+
 .stats {
   width: 32.7rem;
-  height: 47rem;
+  padding: 4rem 0;
   margin: 0 auto;
   background: var(--brand-beige);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+  border: 1px solid var(--brand-light);
+  border-radius: 0.6rem;
+}
+
+.stat h3 {
+  font-size: 4.8rem;
+  color: var(--headline);
+  line-height: 130%;
+  margin-bottom: 0.4rem;
+}
+
+.stats p {
+  margin: 0;
+  color: var(--primary-color);
+  font-size: 1.6rem;
+  line-height: 150%;
+}
+
+nav {
+  display: flex;
+  padding: 1.6rem 2.4rem;
+  width: 37.5rem;
+
+  position: fixed;
+  top: 0;
+  left: 50%;
+  height: 7.2rem;
+  transform: translateX(-50%);
+}
+
+nav.scroll {
+  background-color: var(--primary-color);
+  width: 100vw;
+}
+
+nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav.scroll svg:nth-child(1) path {
+  fill: white;
+}
+
+nav.scroll svg:nth-child(2) path {
+  stroke: white;
 }
