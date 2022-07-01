@@ -10,6 +10,7 @@
   --primary-color: hsl(170, 100%, 26%);
   --headline: hsl(210, 11%, 15%);
   --paragraph: hsl(210, 9%, 31%);
+  --brand-beige: hsl(39, 100%, 97%);
 }
 
 body {
@@ -85,4 +86,11 @@ p {
   font-weight: 400;
   color: var(--paragraph);
   margin-bottom: 3.2rem;
+}
+
+.stats {
+  width: 32.7rem;
+  height: 47rem;
+  margin: 0 auto;
+  background: var(--brand-beige);
 }
