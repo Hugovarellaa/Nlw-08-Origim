@@ -53,7 +53,7 @@ nav .container {
   justify-content: space-between;
 }
 
-nav .container button.menu {
+nav .container button.button-open-menu {
   border: 0;
   background: transparent;
   cursor: pointer;
@@ -72,11 +72,11 @@ nav.scroll .logo:nth-child(2) path {
   stroke: white;
 }
 
-nav.scroll .container button.menu {
+nav.scroll .container button.button-open-menu {
   border: 0;
   background: var(--primary-color);
 }
-nav.scroll .container button.menu path {
+nav.scroll .container button.button-open-menu path {
   stroke: white;
 }
 
