@@ -23,6 +23,18 @@ body {
   text-align: center;
 }
 
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  /* width: 100vw; */
+  height: 108rem;
+  background-color: var(--brand-light);
+}
+
 header {
   width: 37.5rem;
   margin: 0 auto;
@@ -76,6 +88,8 @@ button {
 header img {
   display: block;
   margin: 0 auto;
+  width: 26.4rem;
+  object-position: 0 2rem;
 }
 
 .stats {
