@@ -15,6 +15,10 @@
 
   --brand-beige: hsl(39, 100%, 97%);
   --brand-light: hsl(148, 23%, 89%);
+
+  /* utilidade */
+
+  --nav-height: 7.2rem;
 }
 
 body {
@@ -23,32 +27,53 @@ body {
   text-align: center;
 }
 
+.container {
+  width: 37.5rem;
+  margin: 0 auto;
+  padding: 0 2.4rem;
+}
+
+/*---------- Navigation ---------- */
+
+nav.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  /* padding: 1.6rem 2.4rem; */
+  height: var(--nav-height);
+
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/*---------- Header ---------- */
+
 header::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
   width: 100%;
   /* width: 100vw; */
-  height: 108rem;
+  height: calc(var(--nav-height) + 108rem);
   background-color: var(--brand-light);
 }
 
-header {
-  width: 37.5rem;
-  margin: 0 auto;
-  padding: 0 2rem;
-  margin-top: 4.1rem;
+header.container {
+  margin-top: calc(var(--nav-height) + 4.1rem);
 }
 
-h4 {
+header h4 {
   font-size: 1.4rem;
   color: var(--primary-color);
   margin-bottom: 1.6rem;
 }
 
-h1 {
+header h1 {
   font-size: 3.4rem;
   color: var(--headline);
   font-size: 3.4rem;
@@ -57,14 +82,14 @@ h1 {
   margin-bottom: 2.4rem;
 }
 
-p {
+header p {
   font-size: 1.8rem;
   font-weight: 400;
   color: var(--paragraph);
   margin-bottom: 3.2rem;
 }
 
-button {
+header button {
   background: var(--primary-color);
   color: white;
   border: none;
@@ -92,7 +117,7 @@ header img {
   object-position: 0 2rem;
 }
 
-.stats {
+header .stats {
   width: 32.7rem;
   padding: 4rem 0;
   margin: 0 auto;
@@ -104,17 +129,17 @@ header img {
   gap: 6rem;
 
   border: 1px solid var(--brand-light);
-  border-radius: .6rem;
+  border-radius: 0.6rem;
 }
 
-.stat h3 {
+header .stat h3 {
   font-size: 4.8rem;
   color: var(--headline);
   line-height: 130%;
   margin-bottom: 0.4rem;
 }
 
-.stat p {
+header .stat p {
   margin: 0;
   color: var(--primary-color);
   font-size: 1.6rem;
