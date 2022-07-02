@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,8 +17,8 @@
     <link rel="stylesheet" href="style.css" />
     <title>DoctorCare</title>
   </head>
-  <body onscroll="onScroll()">
-    <nav  id="navigation">
+  <body onscroll="onScroll()" >
+    <nav id="navigation">
       <div class="container">
         <a href="#" class="logo">
           <svg
@@ -69,37 +70,74 @@
             />
           </svg>
         </a>
-        <svg
-          width="40"
-          height="40"
-          viewBox="0 0 40 40"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M10 20H30"
-            stroke="#00856F"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-          <path
-            d="M10 12H30"
-            stroke="#00856F"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-          <path
-            d="M18 28L30 28"
-            stroke="#00856F"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="#">Início</a>
+            </li>
+            <li>
+              <a href="#">Sobre</a>
+            </li>
+            <li>
+              <a href="#">Serviços</a>
+            </li>
+            <li>
+              <a href="#">Depoimentos</a>
+            </li>
+          </ul>
+          <a class="button">Agende sua consulta</a>
+
+          <ul class="social-links">
+            <li>
+              <a href="" target="_blank">
+                <img src="./images/instagram.svg" alt="" />
+              </a>
+              <a href="" target="_blank">
+                <img src="./images/facebook.svg" alt="" />
+              </a>
+              <a href="" target="_blank">
+                <img src="./images/youtube.svg" alt="" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <button class="open-menu" onclick="openMenu()">
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10 20H30"
+              stroke="#00856F"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M10 12H30"
+              stroke="#00856F"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M18 28L30 28"
+              stroke="#00856F"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+        <button class="close-menu" onclick="closeMenu()">
+          <img src="./images/close.svg" alt="" />
+        </button>
       </div>
     </nav>
+
     <header class="container">
       <h4>BOAS-VINDAS A DOCTORCARE 👋</h4>
       <h1>Assistência médica simplificada para todos</h1>
