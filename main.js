@@ -1,9 +1,8 @@
 function menuScroll() {
-  const nav = document.querySelector("#navigation");
-  if (scrollY === 0) {
-    nav.classList.remove("scroll");
+  if (scrollY > 0) {
+    navigation.classList.add("scroll");
   } else {
-    nav.classList.add("scroll");
+    navigation.classList.remove("scroll");
   }
 }
 
