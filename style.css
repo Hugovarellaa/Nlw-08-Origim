@@ -39,14 +39,14 @@ body {
 .container {
   width: 37.5rem;
   margin: 0 auto;
+  padding: 0 2.4rem;
 }
 
 /* --------------- Navigation --------------- */
 
 nav {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  height: var(--nav-height);
 
   position: fixed;
   top: 0;
@@ -54,22 +54,48 @@ nav {
   transform: translateX(-50%);
 }
 
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav.scroll {
+  width: 100%;
+  background: var(--brand-green);
+}
+
+nav.scroll svg:nth-child(1) path {
+  fill: white;
+}
+
+nav.scroll button path {
+  stroke: white;
+}
+
+nav button {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
 /* --------------- Header --------------- */
 
-header {
-  margin-top: calc(--nav-height + 74.1rem);
+header.container {
+  margin-top: calc(4.1rem + var(--nav-height));
 }
 
 header::before {
   content: "";
+  width: 100%;
+  height: calc(108rem + var(--nav-height));
+
   position: absolute;
   background-color: var(--brand-green-light);
   display: block;
 
   top: 0;
   left: 0;
-  width: 100%;
-  height: 108rem;
   z-index: -1;
 }
 
