@@ -35,7 +35,7 @@ body {
   font-size: 1.6rem;
   text-align: center;
   -webkit-font-smooth: antialiased;
-  
+
   overflow: overlay;
 }
 
@@ -53,7 +53,6 @@ a {
   margin: 0 auto;
   padding: 0 2.4rem;
 }
-
 
 /* --------------- Navigation --------------- */
 
@@ -289,3 +288,43 @@ header .stat p {
 }
 
 /* --------------- Services --------------- */
+
+#services {
+  margin: 10rem 0;
+}
+
+#services header h4 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 150%;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+  color: var(--brand-green);
+  margin-bottom: 1.6rem;
+}
+
+#services header h2 {
+  font-size: 3rem;
+  line-height: 3.9rem;
+
+  color: var(--gray-headline);
+  margin-bottom: 6rem;
+}
+
+#services .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+#services .card {
+  padding: 2.4rem;
+  text-align: left;
+  background: var(--white);
+  border: 1px solid var(--brand-green-light);
+  border-radius: 0.6rem;
+}
+
+#services .card h3 {
+  margin: 1.6rem 0;
+}
