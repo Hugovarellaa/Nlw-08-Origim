@@ -603,6 +603,14 @@ footer .social-links {
 
   /* --------------- Home --------------- */
 
+  #home::before {
+    height: calc(97% - var(--nav-height));
+  }
+
+  #home {
+    padding-top: var(--nav-height);
+  }
+
   #home .container {
     grid-template-columns: 60.5rem 1fr;
     grid-template-areas:
