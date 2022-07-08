@@ -1,4 +1,5 @@
 window.addEventListener("scroll", menuScroll);
+menuScroll();
 
 function showNavOnScroll() {
   if (scrollY > 0) {
