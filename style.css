@@ -731,4 +731,30 @@ footer .social-links {
   #contact .col-b {
     display: flex;
   }
+
+  /* --------------- Footer --------------- */
+
+  footer {
+    padding: 8rem 0;
+  }
+
+  footer .container{
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "A B";
+  }
+
+  footer .container .col-a {
+    align-self: center;
+  }
+
+  footer .container .col-b {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+
+  footer .container p {
+    margin-bottom: 0;
+  }
+
 }
