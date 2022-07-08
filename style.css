@@ -39,7 +39,6 @@ body {
   font-family: "DM Sans", sans-serif;
   font-size: 1.6rem;
   text-align: center;
-  -webkit-font-smooth: antialiased;
 
   overflow: overlay;
 
@@ -69,12 +68,12 @@ section {
 
 nav {
   display: flex;
+  width: 100%;
   height: var(--nav-height);
 
   position: fixed;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  z-index: 100;
 }
 
 nav .container {
@@ -84,11 +83,10 @@ nav .container {
 }
 
 nav.scroll {
-  width: 100%;
   background: var(--brand-green);
 }
 
-nav.scroll svg:nth-child(1) path {
+nav.scroll .logo path {
   fill: white;
 }
 
@@ -108,8 +106,9 @@ body.menu-expanded {
   overflow: hidden;
 }
 
-body.menu-expanded > *:not(nav) {
-  display: none;
+body.menu-expanded > :not(nav) {
+  visibility: hidden;
+  opacity: 0;
 }
 
 .menu,
@@ -137,10 +136,6 @@ body.menu-expanded .menu {
   height: 100vh;
 
   padding-top: var(--nav-height);
-}
-
-body.menu-expanded nav {
-  position: relative;
 }
 
 .menu ul:first-child li {
