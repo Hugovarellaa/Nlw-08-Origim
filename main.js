@@ -1,3 +1,5 @@
+window.addEventListener("scroll", menuScroll);
+
 function showNavOnScroll() {
   if (scrollY > 0) {
     navigation.classList.add("scroll");
@@ -8,11 +10,11 @@ function showNavOnScroll() {
 
 function menuScroll() {
   showNavOnScroll();
-  buttonBackToTop()
+  buttonBackToTop();
 }
 
 function buttonBackToTop() {
-  if (scrollY > 500) {
+  if (scrollY > 350) {
     backTop.classList.add("show");
   } else {
     backTop.classList.remove("show");
