@@ -1,8 +1,21 @@
-function menuScroll() {
+function showNavOnScroll() {
   if (scrollY > 0) {
     navigation.classList.add("scroll");
   } else {
     navigation.classList.remove("scroll");
+  }
+}
+
+function menuScroll() {
+  showNavOnScroll();
+  buttonBackToTop()
+}
+
+function buttonBackToTop() {
+  if (scrollY > 500) {
+    backTop.classList.add("show");
+  } else {
+    backTop.classList.remove("show");
   }
 }
 
