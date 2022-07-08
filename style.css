@@ -396,3 +396,39 @@ body.menu-expanded .close-menu path {
   gap: .8rem;
 }
 
+
+/* --------------- Footer --------------- */
+
+footer {
+  background-color: var(--brand-green);
+  padding: 6rem 0;
+
+  text-align: left;
+  color: var(--white)
+}
+
+footer .logo {
+  display: inline-block;
+  margin-bottom: 2.4rem;
+}
+
+footer .logo svg {
+  width: 23.6rem;
+  height: 3.1rem;
+}
+
+footer .logo path {
+  fill: var(--white);
+}
+
+footer p {
+  color: var(--brand-beige);
+  line-height: 2;
+}
+
+footer .social-links {
+  margin-top: 3.2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
