@@ -1,6 +1,7 @@
 window.addEventListener("scroll", menuScroll);
 menuScroll();
 
+
 function showNavOnScroll() {
   if (scrollY > 0) {
     navigation.classList.add("scroll");

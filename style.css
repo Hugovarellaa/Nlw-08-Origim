@@ -438,9 +438,13 @@ footer .social-links {
   right: 2.5rem;
   opacity: 0;
   visibility: hidden;
+  transform: translateY(100%);
+  transition: 200ms;
 }
 
 #backTop.show {
   opacity: 1;
   visibility: visible;
+  transform: translateY(0);
+
 }
