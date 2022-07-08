@@ -13,6 +13,7 @@
   /* Colors */
 
   --brand-green-hover: hsl(170, 100%, 14%);
+  --brand-border: hsla(170, 100%, 26%, 0.15);
   --brand-green: hsl(170, 100%, 26%);
   --brand-green-light: hsl(148, 23%, 89%);
   --brand-green-light-02: hsl(180, 14%, 97%);
@@ -49,6 +50,10 @@ ul {
   list-style: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -62,6 +67,39 @@ a {
 
 section {
   padding: 10rem 0;
+}
+
+section header h4 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 150%;
+  color: var(--brand-green);
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+
+  margin-bottom: 1.6rem;
+}
+
+section header h2 {
+  font-size: 3rem;
+  line-height: 3.9rem;
+
+  color: var(--gray-headline);
+}
+
+section header h1 {
+  font-size: 3.4rem;
+  color: var(--gray-headline);
+  font-weight: 700;
+  line-height: 130%;
+  margin-bottom: 2.4rem;
+}
+
+section .content p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: var(--gray-paragraph);
 }
 
 /* --------------- Navigation --------------- */
@@ -211,22 +249,6 @@ body.menu-expanded .close-menu path {
   z-index: -1;
 }
 
-#home h4 {
-  font-size: 1.4rem;
-  color: var(--brand-green);
-  font-weight: 700;
-  line-height: 150%;
-  margin-bottom: 1.6rem;
-}
-
-#home h1 {
-  font-size: 3.4rem;
-  color: var(--gray-headline);
-  font-weight: 700;
-  line-height: 130%;
-  margin-bottom: 2.4rem;
-}
-
 #home p {
   font-size: 1.8rem;
   color: var(--gray-paragraph);
@@ -295,21 +317,7 @@ body.menu-expanded .close-menu path {
 
 /* --------------- Services --------------- */
 
-#services header h4 {
-  font-size: 1.4rem;
-  font-weight: bold;
-  line-height: 150%;
-  letter-spacing: 0.08rem;
-  text-transform: uppercase;
-  color: var(--brand-green);
-  margin-bottom: 1.6rem;
-}
-
-#services header h2 {
-  font-size: 3rem;
-  line-height: 3.9rem;
-
-  color: var(--gray-headline);
+#services h2 {
   margin-bottom: 6rem;
 }
 
@@ -329,4 +337,25 @@ body.menu-expanded .close-menu path {
 
 #services .card h3 {
   margin: 1.6rem 0;
+}
+
+/* --------------- About --------------- */
+
+#about {
+  text-align: left;
+  background: var(--brand-beige);
+}
+
+#about header h2 {
+  margin-bottom: 2.4rem;
+}
+
+#about .content p {
+  margin-top: 2.4;
+  margin-bottom: 6rem;
+}
+
+#about .content img {
+  border: 1px solid var(--brand-border);
+  border-radius: 2rem;
 }
