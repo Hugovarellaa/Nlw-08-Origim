@@ -675,6 +675,10 @@ footer .social-links {
 
   /* --------------- Services --------------- */
 
+  #services {
+    padding-bottom: 16rem;
+  }
+
   #services h2 {
     width: 47rem;
     margin: 0 auto;
@@ -692,5 +696,8 @@ footer .social-links {
     flex-grow: 1;
     gap: 4rem;
   }
+
+  /* --------------- Services --------------- */
+
 
 }
