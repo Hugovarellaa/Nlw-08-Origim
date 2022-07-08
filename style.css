@@ -290,7 +290,7 @@ body.menu-expanded .close-menu path {
 #home::before {
   content: "";
   width: 100%;
-  height: calc(108rem + var(--nav-height));
+  height: calc(77% + var(--nav-height));
 
   position: absolute;
   background-color: var(--brand-green-light);
@@ -481,13 +481,27 @@ footer .social-links {
 
 @media (min-width: 1024px) {
   /* --------------- Geral  --------------- */
+
+  body {
+    overflow: auto;
+  }
+
   .container {
     width: min(112rem, 100%);
     display: grid;
   }
 
-  /* --------------- Navigation --------------- */
+  section {
+    padding-top: 16rem;
+  }
+
+  section h2 {
+    font-size: 4rem;
+    line-height: 5.2rem;
+  }
+
   /* --------------- reset  --------------- */
+  /* --------------- Navigation --------------- */
   nav#navigation .container * {
     margin: 0;
     padding: 0;
@@ -658,4 +672,25 @@ footer .social-links {
   #home img {
     width: 42rem;
   }
+
+  /* --------------- Services --------------- */
+
+  #services h2 {
+    width: 47rem;
+    margin: 0 auto;
+  }
+
+  #services .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 6.4rem;
+  }
+
+  #services .card {
+    width: 30%;
+    flex-grow: 1;
+    gap: 4rem;
+  }
+
 }
