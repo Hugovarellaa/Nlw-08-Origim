@@ -500,6 +500,14 @@ footer .social-links {
     line-height: 5.2rem;
   }
 
+  .col-a {
+    grid-area: A;
+  }
+
+  .col-b {
+    grid-area: B;
+  }
+
   /* --------------- reset  --------------- */
   /* --------------- Navigation --------------- */
   nav#navigation .container * {
@@ -633,17 +641,12 @@ footer .social-links {
   }
 
   #home .col-a {
-    grid-area: A;
     text-align: left;
     align-self: center;
   }
 
   #home h1 {
     font-size: 5.2rem;
-  }
-
-  #home .col-b {
-    grid-area: B;
   }
 
   #home .content p {
@@ -699,5 +702,10 @@ footer .social-links {
 
   /* --------------- Services --------------- */
 
+  #about .container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "B A";
+  }
 
+  
 }
