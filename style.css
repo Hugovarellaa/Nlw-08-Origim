@@ -12,12 +12,14 @@
 
   /* Colors */
 
-  --brand-green-hover: hsl(170, 100%, 14%);
-  --brand-border: hsla(170, 100%, 26%, 0.15);
-  --brand-green: hsl(170, 100%, 26%);
-  --brand-green-light: hsl(148, 23%, 89%);
-  --brand-green-light-02: hsl(180, 14%, 97%);
-  --brand-beige: hsl(39, 100%, 97%);
+  --hue: 170;
+
+  --brand-green-hover: hsl(var(--hue), 100%, 14%);
+  --brand-border: hsla(var(--hue), 100%, 26%, 0.15);
+  --brand-green: hsl(var(--hue), 100%, 26%);
+  --brand-green-light: hsl(calc(var(--hue) - 22), 23%, 89%);
+  --brand-green-light-02: hsl(calc(var(--hue) - 10), 14%, 97%);
+  --brand-beige: hsl(calc(var(--hue) - 132), 100%, 97%);
 
   --gray-headline: hsl(210, 11%, 15%);
   --gray-paragraph: hsl(210, 9%, 31%);
@@ -66,7 +68,7 @@ a {
 }
 
 section {
-  padding: 10rem 0;
+  padding-top: 10rem;
 }
 
 section header h4 {
@@ -130,6 +132,32 @@ section .content p {
   background-color: var(--brand-green-hover);
 }
 
+/* --------------- Custom colors --------------- */
+
+body.menu-expanded #navigation .logo path,
+#navigation.scroll .logo path[fill*="#00856F"],
+#navigation.scroll .logo path {
+  fill: white;
+}
+
+#navigation.scroll button.open-menu path[stroke*="#00856F"] {
+  stroke: white;
+}
+
+#services .card svg circle {
+  fill: var(--brand-green-light);
+}
+
+#navigation button.open-menu path[stroke*="#00856F"],
+#contact li path {
+  stroke: var(--brand-green);
+}
+
+#navigation .logo path[fill*="#00856F"],
+#backTop circle {
+  fill: var(--brand-green);
+}
+
 /* --------------- Navigation --------------- */
 
 nav {
@@ -150,14 +178,6 @@ nav .container {
 
 nav.scroll {
   background: var(--brand-green);
-}
-
-nav.scroll .logo path {
-  fill: white;
-}
-
-nav.scroll button path {
-  stroke: white;
 }
 
 nav button {
@@ -375,6 +395,7 @@ body.menu-expanded .close-menu path {
 
 #contact {
   text-align: left;
+  padding-bottom: 10rem;
 }
 
 #contact header {
