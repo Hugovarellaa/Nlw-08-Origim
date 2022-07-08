@@ -62,7 +62,7 @@ a {
 }
 
 .container {
-  width: 37.5rem;
+  width: min(50rem, 100%);
   margin: 0 auto;
   padding: 0 2.4rem;
 }
@@ -186,6 +186,11 @@ nav button {
   cursor: pointer;
 }
 
+nav .menu,
+nav .close-menu {
+  position: fixed;
+}
+
 /* --------------- Menu expanded --------------- */
 
 body.menu-expanded {
@@ -213,7 +218,6 @@ body.menu-expanded .close-menu {
 }
 
 body.menu-expanded .menu {
-  position: fixed;
   top: 0;
   left: 0;
   background: var(--brand-green);
@@ -317,7 +321,7 @@ body.menu-expanded .close-menu path {
 }
 
 #home .stats {
-  width: 32.7rem;
+  width: 100%;
   padding: 4rem 0;
   margin: 0 auto;
   background: var(--brand-beige);
