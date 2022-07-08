@@ -446,5 +446,8 @@ footer .social-links {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
+}
 
+#backTop.show:hover {
+  filter: brightness(1.3);
 }
