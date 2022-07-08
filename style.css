@@ -102,6 +102,35 @@ section .content p {
   color: var(--gray-paragraph);
 }
 
+.button {
+  width: fit-content;
+  background: var(--brand-green);
+  border: 0;
+  border-radius: 4rem;
+
+  padding: 1.6rem 3.2rem;
+
+  margin-bottom: 6rem;
+  
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--white);
+  text-transform: uppercase;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  background-color: var(--brand-green-hover);
+}
+
+
 /* --------------- Navigation --------------- */
 
 nav {
@@ -257,24 +286,8 @@ body.menu-expanded .close-menu path {
   margin-bottom: 3.2rem;
 }
 
-#home button {
-  background: var(--brand-green);
-  border: 0;
-  border-radius: 4rem;
-
-  margin-bottom: 6rem;
-  width: 26.3rem;
-  height: 6.2rem;
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: var(--white);
-  text-transform: uppercase;
-
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.6rem;
+#home .button {
+ 
   margin: 0 auto 6rem;
 }
 
@@ -359,3 +372,27 @@ body.menu-expanded .close-menu path {
   border: 1px solid var(--brand-border);
   border-radius: 2rem;
 }
+
+/* --------------- Contact --------------- */
+
+#contact {
+  text-align: left;
+}
+
+#contact header {
+  margin-bottom: 3.2rem;
+}
+
+#contact ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  margin-bottom: 3.2rem;
+}
+
+#contact ul li {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+}
+
