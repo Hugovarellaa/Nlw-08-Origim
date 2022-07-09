@@ -69,4 +69,5 @@ ScrollReveal({
       #home, #home img, #home .stats, 
       #services, #services header, #services .card,
       #about, #about header, #about .content
-      `);
+`);
+
